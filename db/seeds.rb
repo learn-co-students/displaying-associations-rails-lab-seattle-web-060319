@@ -3,5 +3,9 @@
 #
 # Examples:
 #
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+  # cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
+  # Mayor.create(name: 'Emanuel', city: cities.first)
+ffdp = Artist.create!(name: "Five Finger Death Punch")
+ffdp.songs.create!(title: "Cold")
+ffdp.songs.create!(title: "House of the Rising Sun")
+ffdp.songs.create!(title: "Anywhere but Here")
