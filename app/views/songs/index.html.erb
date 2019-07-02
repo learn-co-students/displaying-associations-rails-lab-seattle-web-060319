@@ -1,0 +1,9 @@
+<% require 'pry' %>
+<h1>Songs</h1>
+
+<%= @songs.each do |song| %>
+<p><%song.artist%> - <%redirect_to song.artist, artist_path(song.artist_id) %> </p>
+ 
+<%= song.title %>
+<%end%>
+

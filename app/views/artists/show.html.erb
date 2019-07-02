@@ -1,0 +1,7 @@
+<%require 'pry' %>
+<h1>My Artist</h1>
+<h3>Name: <%= @artist.name %> </h3>
+<% @artist.songs.each do |song| %>
+<%= link_to song.title, song %>
+<%= link_to %>
+<%end%>

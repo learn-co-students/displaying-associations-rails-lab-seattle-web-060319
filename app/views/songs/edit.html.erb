@@ -1,8 +1,9 @@
-<h1>Editing <%= @song.name %></h1>
+<h1>Editing <%= @song.title %></h1>
 
 <%= form_for @song  do |f| %>
   <%= f.label :title %>
   <%= f.text_field :title %>
+   <%= f.collection_select(:artist_id, @artists, :id, :name) %>
   <br />
 
   <%= f.submit %>
